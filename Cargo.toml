@@ -1,0 +1,20 @@
+[package]
+name = "rusty-chess-game"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "2"
+
+[dependencies]
+bevy = "0.15.1"
+bevy-inspector-egui = "0.28.1"
+bevy_ecs_tilemap = "0.15.0"
+bevy_editor_pls = "0.10.0"
+bevy_mod_picking = "0.20.1"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
