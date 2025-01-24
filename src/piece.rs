@@ -12,7 +12,7 @@ pub mod queen;
 pub mod rock;
 
 pub trait Piece {
-    fn spawn(cmds: &mut Commands);
+    fn spawn(cmds: &mut Commands, tile_pos: TilePos);
     fn show_moves(&self, cmds: &mut Commands);
     fn kill(&self, cmds: &mut Commands);
     fn die(&self, cmds: &mut Commands);
